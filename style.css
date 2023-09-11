@@ -1,16 +1,16 @@
 body {
-background-color: black;
-color: white;
+  background-color: rgb(231, 15, 15);
+  color: white;
 }
 
-.welcome{
-    margin: auto;
+.welcome {
+  margin: auto;
   width: 50%;
-  }
+}
 
-  .acronym{
-    pointer-events: auto;
-  }
-  .hidden{
-    display: none;
-  }
+.acronym {
+  pointer-events: auto;
+}
+.hidden {
+  display: none;
+}
