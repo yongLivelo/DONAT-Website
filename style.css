@@ -1,0 +1,16 @@
+body {
+background-color: black;
+color: white;
+}
+
+.welcome{
+    margin: auto;
+  width: 50%;
+  }
+
+  .acronym{
+    pointer-events: auto;
+  }
+  .hidden{
+    display: none;
+  }
