@@ -4,4 +4,5 @@ function showAcronym() {
   acronym_meaning[0].classList.toggle("hidden");
   console.log("hI mawd102");
   console.log("niga");
+  console.log("hello po");
 }
