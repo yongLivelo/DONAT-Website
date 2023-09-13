@@ -6,5 +6,6 @@ function showAcronym() {
   console.log("niga");
   console.log("hello po");
   console.log("nice");
+  console.log("test");
   console.log("hello po");
 }
