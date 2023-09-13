@@ -5,5 +5,6 @@ function showAcronym() {
   console.log("hI mawd102");
   console.log("niga");
   console.log("hello po");
+  console.log("nice");
   console.log("hello po");
 }
