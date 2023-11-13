@@ -1,10 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
+/* HTML */
 * {
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-padding: 6rem;
+}
+
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 20px;
 }
 
 ::-webkit-scrollbar-track {
@@ -21,6 +29,7 @@
   font-family: "Press Start 2P", "Times New Roman", Times, serif;
 }
 
+/* Header */
 header {
   z-index: 100;
   position: fixed;
@@ -112,7 +121,7 @@ nav div:hover {
 
 .strands {
   position: relative;
-  height: 50%;
+  height: 500px;
   display: flex;
 }
 
@@ -123,32 +132,43 @@ nav div:hover {
   transition: all 1s;
 }
 
-.s2 img {
+.strand .desc {
+  color: white;
+  width: 400px;
+  top: -300px;
+  position: relative;
+  font-size: 10px;
+  opacity: 0;
+  transition: all 0.4s;
+  display: inline-block;
+  z-index: 90;
+}
+
+.strand:hover .desc {
+  display: inline-block;
+  opacity: 1;
+}
+
+.strand img {
+  filter: brightness(1), blur(0);
+  border: #000000 solid 3px;
   width: 400px;
   height: 300px;
   object-fit: fill;
+  transition: all 0.4s;
 }
 
-.s1,
-.s3 {
-  font-size: 10px;
-}
-.s1 > img,
-.s3 > img {
-  width: 300px;
-  height: 200px;
-  object-fit: fill;
+.strand:hover img {
+  filter: brightness(0.3);
+  border: #000000 solid 5px;
+  width: 500px;
+  height: 400px;
 }
 
-.strand-controls {
-  flex-grow: 2;
-  position: relative;
-  left: 40px;
+.strand:hover p {
+  opacity: 1;
 }
 
-.strand-controls img {
-  width: 100px;
-}
 .left {
   transform: rotate(180deg);
 }
@@ -159,10 +179,4 @@ nav div:hover {
 
 .hidden {
   opacity: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  scroll-padding: 6rem;
 }
