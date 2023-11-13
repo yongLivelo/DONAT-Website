@@ -120,28 +120,31 @@ nav div:hover {
 }
 
 .strands {
-  position: relative;
+  /* position: relative; */
   height: 500px;
   display: flex;
 }
 
 .strand {
+  position: relative;
   flex-grow: 1;
   text-align: center;
   margin-right: 50px;
   transition: all 1s;
 }
 
-.strand .desc {
+.strand > .desc {
   color: white;
   width: 400px;
-  top: -300px;
-  position: relative;
-  font-size: 10px;
+  top: 100px;
+  left: 100px;
+  position: absolute;
+  font-size: 18px;
   opacity: 0;
   transition: all 0.4s;
   display: inline-block;
   z-index: 90;
+  line-height: 18px;
 }
 
 .strand:hover .desc {
